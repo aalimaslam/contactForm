@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload='whenLoaded()'>
+    <div class="container">
+        <h1 class="main-heading">Contact Form</h1>
+        <div class="content">
+            <div class="content-body">
+                <div class="text">
+                    <div class="heading">
+                        We Connect The World<br> Together.
+                    </div>
+                    <div class="sub-heading">
+                        You Imagine We Put It Live.
+                    </div>
+                    <div class="quote">
+                        "We Simply Make Your <u>Dreams</u> Come Live."
+                    </div>
+                </div>
+            </div>
+            <form action="" id="form" onsubmit='toSubmit()'>
+                <div class="form-group">
+                    <i class='fas fa-user'></i>
+                    <input type="text" placeholder='Enter your name..' id='name' class="form-control">
+                </div>
+                <div class="form-group">
+                    <i class='fas fa-envelope'></i>
+                    <input type="email" placeholder="Enter Your Email.." id='email' class="form-control">
+                </div>
+                <div class="form-group">
+                    <i class='fas fa-comment'></i>
+                    <textarea name="message" placeholder="Enter Your Message..." id="message" cols="22" rows="8" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" id='submit' class='btn'>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="button">
+        <button class="clear" onclick="removeEverything()">
+            Remove Everything From LocalStorage
+        </button>
+        <button class="view" onclick="viewInfo()">
+            View Most Recent Form
+        </button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

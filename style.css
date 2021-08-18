@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+*::selection{
+    background:orange;
+    color:white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(rgb(4, 111, 218),dodgerblue);
+    padding:40px;
+    color:white;
+}
+.main-heading{
+    padding:20px;
+    text-align: center;
+}
+.form-group{
+    padding:5px;
+    position: relative;
+    margin:5px;
+}
+textarea,.btn,input{
+    outline:none;
+    border:none;
+    background:transparent;
+}
+textarea{
+    border:2px solid white;
+    padding:10px;
+    color:white;
+    resize: none;
+    text-indent: 20px;
+}
+textarea::placeholder,input::placeholder{
+    color:#ddd;
+}
+input{
+    border-bottom:2px solid white;
+    width:100%;
+    padding:5px;
+    text-indent: 20px;
+    color:white;
+}
+i{
+    position: absolute;
+    bottom:15px;
+}
+.fa-comment{
+    top:15px;
+    left:15px;
+}
+.btn{
+    padding:10px 30px;
+    background:#eee;
+    color:black;
+    width: 100%;
+    border-radius: 5px;
+    text-indent: 0px;
+    text-transform: uppercase;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.content-body .text{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.heading{
+    padding:20px 20px 0px 20px;
+    font-size:2rem;
+    text-align: right;
+}
+.sub-heading{
+    padding:0px 0px 10px 10px;
+    font-size:0.9rem;
+    color:#eee;
+    text-align: right;
+    position: absolute;
+    left:30px;
+    top:70px;
+    text-decoration: underline;
+}
+.quote{
+    padding:20px;
+    font-family: cursive;
+
+}
+.btn:hover{
+    background:#fff;
+}
+.button{
+    position: absolute;
+    bottom:20px;
+}
+.button button{
+    padding:10px 30px;
+    border-radius: 5px;
+    background: rgb(4, 111, 218);
+    color:white;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+.button button:hover{
+    background:dodgerblue;
+}
